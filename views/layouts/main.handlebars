@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/image/Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>DevFrases</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/" class="logo">
+            <img src="/image/Logo.svg" alt="Logo">
+        </a>
+        <ul class="navbar-center">
+            <li><a href="/">Frases</a></li>
+            {{!-- <li><a href="/about">Sobre</a></li> --}}
+            {{#if session.userid}}
+             <li><a href="/dev/dashboard">Dashboard</a></li>
+             <li><a href="/logout">Sair</a></li>
+            {{else}}
+             <li><a href="/login">Entrar</a></li>
+             <li><a href="/register">Registrar</a></li>
+            {{/if}}
+        </ul>
+    </nav>
+    <main class="container">
+        {{#if messages.message}}
+        <div class="message">
+            {{messages.message}}
+        </div>
+        {{/if}}
+        {{{ body }}}
+    </main>
+    <footer class="footer">
+        <p><span>DevFrases</span> &copy; <span class="year"></span></p>
+    </footer>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

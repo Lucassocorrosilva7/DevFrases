@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #7D1E6A;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: "Ubuntu", sans-serif; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+button {
+  cursor: pointer;
+  outline: none; }
+
+input {
+  outline: none;
+  border: none; }
+
+.navbar {
+  background-color: #BDE6F1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  margin-bottom: 1rem; }
+
+.navbar-center {
+  display: flex;
+  gap: 1rem; }
+  .navbar-center a {
+    color: #7D1E6A;
+    font-size: 1.7rem;
+    font-weight: bold;
+    transition: all .2s; }
+    .navbar-center a:hover {
+      color: #a72e8e; }
+
+.container {
+  min-height: 100vh;
+  padding: 2rem; }
+
+.auth-container {
+  max-width: 45.0rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+  .auth-container h2 {
+    margin-bottom: 1rem;
+    color: #fff;
+    border-left: 4px solid #FFE59D;
+    padding: 1rem; }
+
+.form {
+  background-color: #FFE59D;
+  padding: 2rem;
+  border-radius: 0 1rem 1rem 1rem; }
+  .form__control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem; }
+    .form__control label {
+      color: #7D1E6A;
+      font-weight: bold;
+      margin-bottom: .5rem; }
+    .form__control input {
+      padding: .9rem;
+      border-radius: .5rem; }
+  .form__btn {
+    cursor: pointer;
+    background-color: #7D1E6A;
+    color: #fff;
+    padding: 1.2rem 0;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    transition: all .2s; }
+    .form__btn:hover {
+      background-color: #a72e8e; }
+  .form :is(p, a) {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: #7D1E6A; }
+
+.message {
+  background-color: #BDE6F1;
+  padding: 1rem;
+  color: #7e979e;
+  text-align: center;
+  margin: 0 auto 2rem;
+  max-width: 40%; }
+
+.footer {
+  height: 12.0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EEB0B0; }
