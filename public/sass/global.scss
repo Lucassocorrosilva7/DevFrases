@@ -39,6 +39,8 @@ input {
     border: none;
 }
 
+.btn {}
+
 .navbar {
     background-color: #BDE6F1;
     display: flex;
@@ -117,11 +119,10 @@ input {
         padding: 1.2rem 0;
         width: 100%;
         font-weight: bold;
-        // border-radius: 1rem;
         margin-bottom: 1rem;
         transition: all .2s;
 
-        &:hover{
+        &:hover {
             background-color: #a72e8e;
         }
     }
@@ -135,7 +136,7 @@ input {
 }
 
 
-.message{
+.message {
     background-color: #BDE6F1;
     padding: 1rem;
     color: #7e979e;
@@ -144,10 +145,202 @@ input {
     max-width: 40%;
 }
 
+.dev-form-container {
+    margin: 0 auto;
+
+    form {
+        max-width: 30%;
+    }
+
+    h1 {
+        margin: 2rem 0;
+        color: #fff;
+        border-left: 4px solid #FFE59D;
+        padding: 1rem;
+    }
+
+    a {
+        color: #BDE6F1;
+    }
+}
+
+.dashboard {
+    padding: 2rem;
+
+    &__btn {
+        background-color: #BDE6F1;
+        padding: 1rem 3rem;
+        font-weight: bold;
+        font-size: 1.6rem;
+        color: #262626;
+        border-radius: 1rem;
+    }
+
+    &__title {
+        margin: 2rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            border-left: 4px solid #BDE6F1;
+        }
+
+    }
+
+    h3 {
+        margin: 1rem 0;
+
+    }
+
+    ul {
+
+        li {
+            display: flex;
+            justify-content: space-between;
+
+            .span-label {
+                background: #BDE6F1;
+                border-radius: 1rem;
+                width: 90%;
+                padding: 2rem;
+                margin: 1rem 0;
+                color: #262626;
+            }
+
+            .actions {
+                display: flex;
+                gap: 1rem;
+                padding: 1rem;
+                align-items: center;
+
+                a {
+                    background-color: rgb(172, 172, 3);
+                    padding: 1rem 2rem;
+                }
+
+                .trash {
+                    padding: 1rem 2rem;
+                    background-color: rgb(206, 44, 44);
+                }
+            }
+        }
+    }
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+
+    .btn-search{
+        background-color: #BDE6F1;
+        padding: 1rem 3rem;
+        color: #262626;
+        border-radius: 1rem;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all ease .5s;
+
+        &:hover{
+            background-color: #7e979e;
+        }
+    }
+
+    h1 {
+        margin: 1rem;
+    }
+
+    span {
+        color: #FFE59D;
+    }
+
+    p,
+    form {
+        margin-bottom: 1.2rem;
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid #fff;
+        margin-right: 1rem;
+    }
+
+    input[type='text'] {
+        width: 60%;
+        border-radius: 1rem;
+        padding: 1rem;
+        height: 3.5rem;
+        outline: none;
+    }
+
+    input::placeholder {
+        color: #7D1E6A;
+    }
+}
+
+.order-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: 0 auto 1rem;
+
+    span {
+        font-weight: bold;
+        color: #fff;
+    }
+
+    button {
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        color: #BDE6F1;
+    }
+
+    a {
+        color: #BDE6F1;
+    }
+}
+
+.home-container{
+
+    figure{
+        border-bottom: 1px solid #BDE6F1;
+        padding: .5rem;
+        max-width: 50%;
+        margin: 0 auto 1rem;
+    }
+
+    blockquote{
+        font-size: 3rem;
+        font-style: italic;
+        margin-bottom: 1rem;
+    }
+
+    span{
+        color: #BDE6F1;
+        font-size: 2rem;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+}
+
 .footer {
     height: 12.0rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #EEB0B0;
+
+    p{
+        color: #7D1E6A;
+        font-size: 2rem;
+    }
 }

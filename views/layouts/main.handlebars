@@ -19,14 +19,14 @@
             <img src="/image/Logo.svg" alt="Logo">
         </a>
         <ul class="navbar-center">
-            <li><a href="/">Frases</a></li>
-            {{!-- <li><a href="/about">Sobre</a></li> --}}
+            <li><a href="/">Ideias</a></li>
+            <li><a href="/pages/about">Sobre</a></li>
             {{#if session.userid}}
-             <li><a href="/dev/dashboard">Dashboard</a></li>
-             <li><a href="/logout">Sair</a></li>
+            <li><a href="/pages/dashboard">Dashboard</a></li>
+            <li><a href="/logout">Sair</a></li>
             {{else}}
-             <li><a href="/login">Entrar</a></li>
-             <li><a href="/register">Registrar</a></li>
+            <li><a href="/login">Entrar</a></li>
+            <li><a href="/register">Registrar</a></li>
             {{/if}}
         </ul>
     </nav>
@@ -39,7 +39,7 @@
         {{{ body }}}
     </main>
     <footer class="footer">
-        <p><span>DevFrases</span> &copy; <span class="year"></span></p>
+        <p><span>Dev-Ideias</span> &copy; <span class="year"></span></p>
     </footer>
     <script src="/js/app.js"></script>
 </body>

@@ -19,7 +19,7 @@ const devRoutes = require("./routes/devRoutes")
 const authRoutes = require("./routes/authRoutes")
 
 
-const DevController = require('./controller/DevController')
+const DevController = require('./controllers/DevController')
 
 
 app.engine('handlebars', engine())

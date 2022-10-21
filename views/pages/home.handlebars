@@ -1,1 +1,41 @@
-<h1>Frases</h1>
+<header class="header">
+    {{#if search}}
+    <h1>Você está buscando por: {{search}}</h1>
+    {{#if devsQty}}
+    <p>Foram encontrados {{devsQty}} ideias</p>
+    {{else}}
+    <p>Nenhuma ideia encontrada para termo {{search}}</p>
+    {{/if}}
+    {{else}}
+    <h1>Conheça algumas das nossas ideias</h1>
+    {{/if}}
+    <form action="/" method="GET">
+        <input type="text" name="search" placeholder="Buscar ideia">
+        <input type="submit" class="btn-search" value="Buscar">
+    </form>
+    <div class="order-container">
+        <span>Ordernar por:</span>
+        <form action="/" method="GET">
+            <input type="hidden" name="search" value="{{this.search}}">
+            <input type="hidden" name="order" value="new">
+            <button type="submit"><i class="fa-solid fa-arrow-up"></i></button>
+        </form>
+        <form action="/" method="GET">
+            <input type="hidden" name="search" value="{{this.search}}">
+            <input type="hidden" name="order" value="old">
+            <button type="submit"><i class="fa-solid fa-arrow-down"></i></button>
+        </form>
+        <a href="/">Limpar</a>
+    </div>
+</header>
+
+<section class="home-container">
+    {{#each devs}}
+    <figure>
+        <blockquote>
+            "{{this.title}}"
+        </blockquote>
+        <figcaption>por <span>{{this.User.name}}</span></figcaption>
+    </figure>
+    {{/each}}
+</section>

@@ -1,0 +1,24 @@
+<section class="dashboard">
+    <div class="dashboard__title">
+        <h2>Dashboard</h1>
+            <a href="/pages/add" class="btn dashboard__btn">Criar Ideia</a>
+    </div>
+    <h3>Suas Ideias</h3>
+    <ul>
+        {{#each devs}}
+        <li>
+            <span class="span-label">{{this.title}}</span>
+            <span class="actions">
+                <a href="/pages/edit/{{this.id}}">Editar</a>
+                <form action="/pages/remove" method="POST">
+                    <input type="hidden" name="id" value="{{this.id}}">
+                    <input class="trash" type="submit" value="Excluir">
+                </form>
+            </span>
+        </li>
+        {{/each}}
+    </ul>
+    {{#if emptyDevs}}
+    <p>Ainda não há nenhuma ideia, crie <a href="/pages/add">aqui</a></p>
+    {{/if}}
+</section>
