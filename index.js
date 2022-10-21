@@ -7,7 +7,6 @@ const flash = require('express-flash')
 
 const app = express()
 
-
 const connect = require('./db/connect')
 
 
@@ -72,7 +71,6 @@ app.use('/', authRoutes)
 
 app.get("/", DevController.showDev)
 
-//{force:true}
 connect.sync().then(() => {
-    app.listen(3000)
+    app.listen(process.env.PORT)
 }).catch((error) => console.log(error))
