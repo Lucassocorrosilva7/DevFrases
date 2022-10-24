@@ -22,10 +22,6 @@
     "express-handlebars": "^6.0.6",
     "express-session": "^1.17.3",
     "mysql2": "^2.3.3",
-<<<<<<< HEAD
-    "node-sass": "^7.0.3",
-=======
->>>>>>> 3266c6a7f07340795dd9c1d6ea5759b2eaa8aba3
     "nodemon": "^2.0.20",
     "sequelize": "^6.25.3",
     "session-file-store": "^1.5.0"
